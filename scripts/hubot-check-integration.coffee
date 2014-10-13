@@ -15,7 +15,7 @@ path = require 'path'
 
 module.exports = (robot) ->
   robot.respond /check-integration/i, (msg) ->
-    filename = path.join(__dirname, service.yaml)
+    filename = path.join(__dirname, 'service.yaml')
     console.log("CHCEKING:----------- #{filename}");
     check filename, (err, result) ->
       str = "GOOD: #{ result.good.join(' ,') } \nBAD: #{result.bad.join(' ,')}"

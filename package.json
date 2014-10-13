@@ -8,11 +8,16 @@
   },
   "dependencies": {
     "check-porch-integration-env": "*"
-    },
+  },
   "author": "Porch",
   "license": "BSD",
   "bugs": {
     "url": "https://github.com/porchdotcom/hubot-check-integration/issues"
   },
-  "homepage": "https://github.com/porchdotcom/hubot-check-integration"
+  "homepage": "https://github.com/porchdotcom/hubot-check-integration",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
