@@ -10,13 +10,16 @@
 # Author:
 #   porch
 
+Log = require 'log'
 check = require 'check-porch-integration-env'
 path = require 'path'
 
 module.exports = (robot) ->
+  logger = new Log process.env.HUBOT_LOG_LEVEL or 'info'
+
   robot.respond /check-integration/i, (msg) ->
-    filename = path.join(__dirname, 'service.yaml')
-    console.log("CHCEKING:----------- #{filename}");
+    filename = path.join('.', 'service.yaml')
+    logger.warning "hubot-check-env using service.yaml at #{filename}"
     check filename, (err, result) ->
       str = "GOOD: #{ result.good.join(' ,') } \nBAD: #{result.bad.join(' ,')}"
       msg.send str

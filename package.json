@@ -1,12 +1,13 @@
 {
   "name": "hubot-check-integration",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Hubot plugin to check our services status",
   "repository": {
     "type": "git",
     "url": "https://github.com/porchdotcom/hubot-check-integration.git"
   },
   "dependencies": {
+    "log": "1.4.0",
     "check-porch-integration-env": "*"
   },
   "author": "Porch",
