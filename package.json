@@ -1,6 +1,6 @@
 {
   "name": "hubot-check-integration",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Hubot plugin to check our services status",
   "repository": {
     "type": "git",
