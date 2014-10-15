@@ -24,5 +24,5 @@ module.exports = (robot) ->
       str = "GOOD: #{ result.good.map((s) -> s.name).join(' ,')}\n"
       str += "BAD: #{ result.bad.map((s) -> s.name).join(' ,')}\n"
       for s in result.bad
-        str += "[ERROR] #{ bad.name } (#{bad.url}) - #{bad.body})"
+        str += "[ERROR] #{ s.name } (#{s.url}) - #{s.body})"
       msg.send str
