@@ -21,8 +21,8 @@ module.exports = (robot) ->
     filename = path.join('.', 'service.yaml')
     logger.warning "hubot-check-env using service.yaml at #{filename}"
     check filename, (err, result) ->
-      str = "GOOD: #{ result.good.map((s) -> s.name).join(' ,')}\n"
-      str += "BAD: #{ result.bad.map((s) -> s.name).join(' ,')}\n"
+      str = "GOOD: #{ result.good.map((s) -> s.name).join(', ')}\n"
+      str += "BAD: #{ result.bad.map((s) -> s.name).join(', ')}\n"
       for s in result.bad
         str += "[ERROR] #{ s.name } (#{s.url}) - #{s.body})"
       msg.send str
