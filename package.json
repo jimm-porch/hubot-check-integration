@@ -1,6 +1,6 @@
 {
   "name": "hubot-check-integration",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Hubot plugin to check our services status",
   "repository": {
     "type": "git",
@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "log": "1.4.0",
-    "check-porch-integration-env": "0.0.3"
+    "check-porch-integration-env": "0.0.4"
   },
   "author": "Porch",
   "license": "BSD",
